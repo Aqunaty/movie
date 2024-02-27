@@ -1,0 +1,96 @@
+.movie-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  grid-column-gap: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.movie-item {
+    margin-top: 10vh;
+    margin-bottom:10vh ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    font-size: 100%;
+    max-height: 20vh;
+    border: 1px solid #0098ff;
+    padding-bottom: 5.5em;
+    padding-top:5.5em;
+    min-height: 300px;
+}
+
+.movie-link {
+    max-height: 0;
+}
+
+.movie-item img {
+    width: 50%;
+}
+
+.movie-details {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr 1fr;
+    padding-right: 20px;
+    
+}
+
+.image a
+{
+    display:grid;
+    justify-items: center;
+}
+.movie-details button{
+    width:90%;
+    margin-top:20px;
+    cursor: pointer;
+}
+.movie-details a{
+    text-decoration: none;
+
+    height: 0;
+}
+
+/* Sorty select */
+.charts form {
+    padding: 15px 40px;
+    
+}
+.charts label{
+ padding-right: 1em;
+}
+.showMe .selection {
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    height: 40px;
+    
+}
+
+.charts form select {
+    border: 2px solid #c74649;
+   
+
+}
+.selection:focus{
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+}
+@media (max-width: 1280px){
+.movie-list{
+    grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 1024px){
+    .movie-list{
+        grid-template-columns: 1fr;
+        
+    }
+    .movie-details{
+        font-size:0.8em ;
+        grid-gap: 1px;
+    }
+    
+    }

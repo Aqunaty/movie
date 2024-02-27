@@ -1,0 +1,144 @@
+.individualmovie-container {
+  border-bottom: 3.5px solid #0098ff;
+  border-top: 3.5px solid #0098ff;
+}
+
+.individualmovie-container-text {
+  position: absolute;
+  top: 30%;
+  background-color: none;
+  z-index: -1;
+
+}
+.individualmovie-poster-small
+{
+  position:relative;
+  z-index: 1;
+}
+
+.individualmovie-container-image::before {
+  content: "";
+  position: absolute;
+}
+
+.individualmovie-container-image {
+  height: 60vh;
+  position: reletive;
+}
+
+.individualmovie-container-text1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 50px;
+  margin-left: 50px;
+  height: 20vh;
+  justify-content: start;
+  justify-items: end;
+  align-items: center;
+  grid-column-gap: 50px;
+}
+
+.individualmovie-container-text1 img {
+  margin-right: 80px;
+  max-height: 40vh;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.individualmovie-container-text-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.individualmovie-container-text-main .span {
+  grid-column: span 2;
+}
+
+.individualmovie-container-text-main h4 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #0098ff;
+}
+
+
+
+
+.title-fav-watch {
+  display: flex;
+  flex-direction: row;
+}
+
+.title-fav-watch div {
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+
+
+
+
+.favbtn button,
+.watchbtn button {
+  height: 38px;
+  width: auto;
+  font-size: .8em;
+  border-radius: 20px;
+  padding: 5px 10px 5px 35px;
+  border: 0.5px solid #fff;
+}
+
+.unwatchMovie {
+  background-color: transparent;
+  color: #fff;
+  background: url(../images/btn-lineplus.b8a1425b.svg) no-repeat 5%;
+  background-size: 20px;
+}
+
+.unfavMovie {
+  background-color: transparent;
+  color: #fff;
+  background: url(../images/btn-lineheart.cb3a77c8.svg) no-repeat 5%;
+  background-size: 20px;
+}
+
+.favMovie {
+  background-color: transparent;
+  color: #fff;
+  background: url(../images/btn-fillheart.0025439e.svg) no-repeat 5%;
+  background-size: 20px;
+}
+
+.watchMovie {
+  background-color: transparent;
+  color: #fff;
+  background: url(../images/btn-fillplus.6380dcd3.svg) no-repeat 5%;
+  background-size: 20px;
+}
+#small
+{
+  display: none;
+}
+@media (max-width: 769px) {
+  .individualmovie-container-text-main
+  {
+    display: none;
+  }
+  .individualmovie-container
+  {
+    display:none;
+  }
+  .individualmovie-poster-small
+  {
+    scale: 40%;
+    margin-left:100px;
+  }
+  #small
+  {
+    
+    width:30%;
+    display: grid;
+    margin-left:20px;
+  }
+}

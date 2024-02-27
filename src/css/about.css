@@ -1,0 +1,55 @@
+.about {
+    height: 40vh;
+    width: 70%;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+.about-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+}
+
+.about-project {}
+
+.about-text img {
+    width: 160px;
+    height: 60px;
+}
+
+.about-text h4 {
+    margin-bottom: 10px;
+    color: #c74649;
+    font-size: 25px;
+}
+
+.about-text p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.about-text span {
+    margin-bottom: 10px;
+    color: #01d277;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.welcome {
+    font-size: 200%;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    grid-column: span 2;
+}
+
+@media (max-width: 769px) {
+    .about-text {
+        grid-template-columns: 1fr;
+    }
+    .welcome {
+        font-size: 150%;
+        grid-column: span 1;
+    }
+}

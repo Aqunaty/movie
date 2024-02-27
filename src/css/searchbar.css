@@ -1,0 +1,69 @@
+.searchBar {
+    width: 90%;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBar form {
+    width: 90%;
+    margin-left: 20px;
+}
+
+.searchBar form input {
+    all: initial;
+    width: 90%;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.searchBar .search-icon img {
+    width: 25px;
+    height: 25px;
+    filter: brightness(0) invert(1);
+}
+
+.searchBar .search-icon {
+    display: flex;
+}
+.search-results{
+    min-height: 300px;
+    position: absolute; 
+   top:20vh;
+   left:10%;
+   width:80%;
+   
+}
+.movies-seaerch{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    justify-items: center;
+    align-items: center;
+    height:200px;
+    background-color: rgba(2, 54, 89, .95);
+    z-index: 9999;
+}
+.movie-search-text :hover{
+
+    background-color: rgba(0, 85, 141, 0.95);
+}
+a{
+    text-decoration: none;
+}
+.movies-seaerch .title{
+    font-size: 10px;
+}
+
+.search-image img {
+    width: 25%;
+}
+.search-image{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
