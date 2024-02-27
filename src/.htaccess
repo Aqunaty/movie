@@ -1,8 +1,13 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /
-  RewriteRule ^index\.html$ - [L]
+  # Set the base directory for the rewrites to the subdirectory
+  RewriteBase /movie/
+
+  # Rewrite requests to the index.html of the subdirectory unless the request
+  # is for a file that exists...
   RewriteCond %{REQUEST_FILENAME} !-f
+  # ...or for a directory that exists
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.html [L]
+  # Then, serve the index.html file from the subdirectory for those requests
+  RewriteRule . /movie/index.html [L]
 </IfModule>
