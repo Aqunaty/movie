@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './partial/Header';
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './Pages/about';
 import Home from './Pages/Home';
 import Footer from './partial/footer';
@@ -10,16 +10,16 @@ import Favourites from './Pages/favourites';
 import Watch from './Pages/watch';
 import SearchBar from './partial/Searchbar';
 
-export default function App() {
+function App() {
   return (
     <div className="App">
       <Header />
       <SearchBar/>
       <div className='main'>
         <div>
-          <BrowserRouter>
+        <BrowserRouter basename="/movie">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/movie" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/movie/:id" element={<Movie />} />
               <Route path="/favourites" element={<Favourites />} />
@@ -32,3 +32,4 @@ export default function App() {
     </div>
   );
 }
+export default App;
